@@ -296,7 +296,10 @@ export class Parallel extends BaseComposite {
       if (!entityContext) continue;
 
       const transition = this._updateChildEntity(entityContext, frameInfo);
-      if (transition) this.entityContexts[i] = null;
+      if (transition) {
+        this._deactivateChildEntity(entityContext, frameInfo);
+        this.entityContexts[i] = null;
+      }
     }
 
     if (this.options.autoTransition && !_.some(this.entityContexts))
