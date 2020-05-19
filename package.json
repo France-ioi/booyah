@@ -10,9 +10,8 @@
     "underscore": "^1.8.3"
   },
   "scripts": {
-    "build": "gulp build",
-    "dist": "gulp dist",
-    "watch": "gulp watch",
+    "build": "tsc",
+    "watch": "tsc --watch",
     "test": "npx jest test.js"
   },
   "license": "MIT",
