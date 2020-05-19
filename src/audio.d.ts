@@ -1,5 +1,5 @@
+/// <reference types="howler" />
 import * as entity from "./entity";
-import { Howl } from "howler";
 export declare const AUDIO_FILE_FORMATS: string[];
 export interface JukeboxOptions {
     volume?: number;
@@ -52,5 +52,5 @@ export declare function makeHowls(directory: string, assetDescriptions: (string 
     key: string;
     url: string;
 })[]): {
-    [key: string]: any;
+    [key: string]: Howl;
 };

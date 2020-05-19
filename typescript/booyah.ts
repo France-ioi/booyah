@@ -117,7 +117,7 @@ const GRAPHICAL_ASSETS = [
   "booyah/images/voices-on.png"
 ];
 
-// String of characters to look for in a font
+/** String of characters to look for in a font */
 const FONT_OBSERVER_CHARS = "asdf";
 
 const PRELOADER_ASSETS = [
@@ -137,7 +137,11 @@ const rootConfig:Config = {
   jsonAssets: {},
   fxAudio: null,
   gameStateMachine: null,
-  menu: null
+  menu: null,
+  muted: null,
+  jukebox: null,
+  narrator: null,
+  world: null
 };
 
 let loadingScene:any;

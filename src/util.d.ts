@@ -1,5 +1,5 @@
 import { List } from "underscore";
-import * as PIXI from 'pixi.js-legacy';
+import * as PIXI from "pixi.js-legacy";
 /** Test containment using _.isEqual() */
 export declare function contains<T = any>(list: T[], p: T): boolean;
 /** Test containment using _.isEqual() */
